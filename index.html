@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcus de Magalhães — Designer de Produto (UX/UI) & Inventor</title>
+<meta name="description" content="Designer de Produto (UX/UI) de São Paulo. 15+ anos desenhando produtos digitais. Agora construindo produtos próprios com IA.">
+<meta property="og:title" content="Marcus de Magalhães — Designer de Produto & Inventor">
+<meta property="og:description" content="15+ anos desenhando produtos digitais. Agora construindo produtos próprios com IA.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-card: #111111;
+    --bg-hover: #161616;
+    --text: #f5f5f5;
+    --muted: #9ca3af;
+    --green: #34d399;
+    --green-dim: #10b981;
+    --border: #262626;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  a { color: var(--text); text-decoration: none; }
+  a:hover { color: var(--green); }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(10,10,10,.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav { display: flex; justify-content: space-between; align-items: center; min-height: 48px; }
+  .logo { font-weight: 700; letter-spacing: .08em; }
+  .logo span { color: var(--green); }
+  .nav nav { display: flex; gap: 24px; }
+  .nav a { color: var(--muted); font-size: .95rem; min-height: 48px; display: inline-flex; align-items: center; }
+
+  /* Hero */
+  .hero { padding: 96px 0 72px; border-bottom: 1px solid var(--border); }
+  .kicker {
+    color: var(--green); font-size: .8rem; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; max-width: 18ch; }
+  .hero p { margin-top: 20px; color: var(--muted); font-size: 1.12rem; max-width: 56ch; }
+  .hero .now { color: var(--text); }
+  .btn {
+    display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px;
+    margin-top: 32px; background: var(--green); color: #052e1b;
+    font-weight: 700; border-radius: 8px; transition: background .15s;
+  }
+  .btn:hover { background: var(--green-dim); color: #052e1b; }
+  .btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); margin-left: 12px; }
+  .btn.ghost:hover { border-color: var(--green); color: var(--green); }
+
+  /* Sections */
+  section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+  h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.01em; }
+  h2 span { color: var(--green); }
+
+  /* Cards */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 28px; display: flex; flex-direction: column; gap: 12px;
+    transition: border-color .15s, background .15s;
+  }
+  .card:hover { border-color: var(--green); background: var(--bg-hover); }
+  .tag { color: var(--green); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+  .card h3 { font-size: 1.15rem; font-weight: 700; }
+  .card p { color: var(--muted); font-size: .95rem; flex-grow: 1; }
+
+  /* About */
+  .about p { color: var(--muted); max-width: 68ch; margin-bottom: 16px; font-size: 1.05rem; }
+  .about strong { color: var(--text); font-weight: 600; }
+
+  /* Contact */
+  .contact p { color: var(--muted); margin-bottom: 24px; }
+
+  footer { padding: 40px 0; color: var(--muted); font-size: .85rem; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  @media (max-width: 560px) {
+    .hero { padding: 64px 0 48px; }
+    .btn.ghost { margin-left: 0; margin-top: 12px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">ALEMA<span>.IO</span></div>
+    <nav aria-label="Principal">
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero wrap">
+  <p class="kicker">São Paulo · Brasil</p>
+  <h1>Marcus de Magalhães, Designer de Produto &amp; inventor.</h1>
+  <p>15+ anos desenhando produtos digitais com foco em experiência, acessibilidade e impacto real.
+  <span class="now">Hoje eu construo produtos próprios com IA — incluindo um assistente de memória para óculos inteligentes.</span></p>
+  <a class="btn" href="#contato">Me contrate</a>
+  <a class="btn ghost" href="#projetos">Ver projetos</a>
+</div>
+
+<section id="projetos" class="wrap" aria-labelledby="projetos-h">
+  <h2 id="projetos-h">Projetos <span>selecionados</span></h2>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">UX · Seguros · Growth</span>
+      <h3>Checkout Porto — Porto Seguro</h3>
+      <p>Hub de Vendas que unificou mais de 80 produtos e serviços da seguradora em uma plataforma única.
+      Pesquisa e testes de usabilidade para cross-sell no fluxo de compra e recomendação de produtos,
+      com foco em escalabilidade e omnicanalidade.</p>
+    </article>
+    <article class="card">
+      <span class="tag">UX · Inclusão · Acessibilidade</span>
+      <h3>Nome Social</h3>
+      <p>Produto que garante o uso do nome social de pessoas travesti e trans nos fluxos digitais,
+      um direito assegurado pelo Decreto nº 8.727 desde 2016. Da pesquisa ao protótipo navegável:
+      reconhecimento de identidade de gênero como questão de design.</p>
+    </article>
+    <article class="card">
+      <span class="tag">Estratégia · Pesquisa</span>
+      <h3>Nebul Global</h3>
+      <p>Reposicionamento digital para uma empresa de arquitetura focada em construção sustentável e
+      tecnologia de ponta. Análise competitiva, problem statement e proposta de solução para manter
+      eficiência operacional e vantagem competitiva.</p>
+    </article>
+  </div>
+</section>
+
+<section id="sobre" class="wrap about" aria-labelledby="sobre-h">
+  <h2 id="sobre-h">Sobre <span>mim</span></h2>
+  <p><strong>Sou designer de produto com background forte em design gráfico.</strong> Comecei minha jornada
+  inventando e criando — e me encontrei no meio digital, onde desenho experiências que precisam funcionar
+  para pessoas reais.</p>
+  <p>Nos últimos anos assumi também o papel de <strong>empreendedor social e inventor</strong>: orquestrando
+  IAs para construir produtos de tecnologia assistiva, com memória e privacidade pensadas desde o primeiro
+  rascunho. Documento tudo em código aberto.</p>
+  <p>Portfólio em evolução — versão inicial publicada em setembro de 2026.</p>
+</section>
+
+<section id="contato" class="wrap contact" aria-labelledby="contato-h">
+  <h2 id="contato-h">Bora <span>colaborar</span></h2>
+  <p>Aberto a oportunidades de produto, UX e projetos com IA — presenciais ou remotos.</p>
+  <a class="btn" href="mailto:marcusdemagalhaes@gmail.com">marcusdemagalhaes@gmail.com</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© Marcus de Magalhães — 2026</span>
+    <span>GitHub: github.com/marcusalemao</span>
+  </div>
+</footer>
+</body>
+</html>
